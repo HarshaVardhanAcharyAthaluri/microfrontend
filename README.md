@@ -78,7 +78,7 @@ export class AppModule {
 `ng build --prod --output-hashing none --single-bundle true`
  
 # if u got any error like:
-# Schema validation failed with the following errors: Data path ".budgets[1].type" should be equal to one of the allowed values.
+# - ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `Schema validation failed with the following errors: Data path ".budgets[1].type" should be equal to one of the allowed values.`
 # In angular.json remove:
 `{
 "type": "anyComponentStyle",
