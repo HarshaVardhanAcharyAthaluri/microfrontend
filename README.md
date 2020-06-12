@@ -25,7 +25,7 @@ generate components in every app.
 
 
 # demo.component.ts
-`import { Component, OnInit } from '@angular/core';
+`ts import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-demo',
   templateUrl: './demo.component.html',
