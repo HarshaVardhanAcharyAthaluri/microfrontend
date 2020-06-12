@@ -3,7 +3,7 @@
 The term "Micro Front-ends" has been a buzzword for breaking up growing front-end code into easy-to-maintain parts. The front-end is divided into its multiple functions or parts. These parts are implemented and deployed by independent teams. This increases the testability, reusability, and offers the possibility to select different technologies for each micro front-end.
 We will need a few dependencies to build and run Angular custom elements.
 Generate two projects.
-```Ng new app1
+```rubyNg new app1
 Ng new app2
 Ng new mainapp
 ng add @angular/elements 
@@ -18,11 +18,6 @@ generate components in every app.
 `<div style="text-align:center">
   <a href="javascript:alert('Welcome to App1!!');" style="font-size:25px;">{{ title }}</a>
 </div>`
-
-
-
-
-
 
 # demo.component.ts
 `ruby import { Component, OnInit } from '@angular/core';
@@ -70,10 +65,12 @@ export class AppModule {
 
 # Update angular.json:
 
-`"architect": {  "build": {    "builder": "ngx-build-plus:build",  ....
+```ruby  
+"architect": {  "build": {    "builder": "ngx-build-plus:build",  ....
 "serve": {    "builder": "ngx-build-plus:dev-server",    ...
  "test": {    "builder": "ngx-build-plus:karma",
-`
+```
+
 # Running App:
 `ng build --prod --output-hashing none --single-bundle true`
  
