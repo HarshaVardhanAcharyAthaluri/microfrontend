@@ -25,7 +25,7 @@ generate components in every app.
 
 
 # demo.component.ts
-```ruby import { Component, OnInit } from '@angular/core';
+`ruby import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-demo',
   templateUrl: './demo.component.html',
@@ -66,7 +66,7 @@ export class AppModule {
     const myCustomElement = createCustomElement(DemoComponent, { injector: this.injector });
     customElements.define('app-demo’, myCustomElement);
   }
-}```
+}`
 
 # Update angular.json:
 
